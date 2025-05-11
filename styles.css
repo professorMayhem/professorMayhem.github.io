@@ -4,11 +4,11 @@ body {
 
 h1 {
 	font-family: verdana;
-	font-size:  16px;
+	font-size:  18px;
 	color: blue;
-	text-align: center;
+	text-align: left;
 	border:  1px green;
-	background-color:  #D3D3D3;
+	/* background-color:  #D3D3D3; */
 	height:  30px;
 	border-radius:  10px;
 }
