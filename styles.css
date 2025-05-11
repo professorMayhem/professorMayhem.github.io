@@ -15,7 +15,7 @@ h1 {
 
 h2 {
 	font-size:  14px;
-	color: white;
+	color: green;
 	text-align: left;
 }
 
@@ -28,5 +28,5 @@ img {
 	border:  1px solid green;
 	border-radius: 25px;
 	background: #73AD21;
-	padding: 20px;
+	padding: 8px;
 }
