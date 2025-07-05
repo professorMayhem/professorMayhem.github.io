@@ -4,7 +4,7 @@
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <!-- Modified by Melissa E. Holmes  July 2025       -->
   <link rel="icon" href="flower.png" type="image/x-icon">
-  <title>Portfolio</title>
+  <title>Photo Carousel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Melissa E. Holmes, Ed.D</a>
+      <a class="navbar-brand" href="index.html">Melissa E. Holmes, Ed.D</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -44,39 +44,47 @@
 <!-- Second Container -->
 <div class="container-fluid bg-2 ">
 <div class="container">
-  <h3 class="margin">About This Site</h3>
-    
+ 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-  <p>The development of this website began in July, 2025.  It is a work in progress.  It has two purposes:</p>
-  <ul>
-	<li>It is a first attempt at a new professional portfolio.  I want a portfolio to use as an example for my classes, and for other professional interests.</li>
-	<li>I want to update my skills.  I am currently using Bootstrap for development and GitHub for hosting. </li>
-  </ul>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/waterfall01.jpg" alt="Las Vegas" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/waterfall02.jpg" alt="Oregon" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/waterfall03.jpg" alt="Oregon" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+  
   </div>
   
 </div>
 
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Portfolio In Progress</h3>
-  <div class="row">
-   <div class="col-sm-4"> 
-	  <a href="slideshow.html"><img src="images\camera.png" alt="Camera Lens icon">
-      <p>Photography Carousel</p>
-      </a>
-    </div>
-    <div class="col-sm-4"> 
-	  <a href="wayback.pdf"><img src="images\redesign.png" alt="Design icon">
-      <p>Website Redesigns</p>
-      </a>
-    </div>
-    <div class="col-sm-4"> 
-	  <a href="https://github.com/professorMayhem"><img src="images\github.png" alt="GitHub icon">
-      <p>GitHub Profile</p>
-      </a>
-    </div>
-  </div>
-</div>
+
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
