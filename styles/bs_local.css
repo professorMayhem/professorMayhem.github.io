@@ -23,6 +23,10 @@ li {font-size: 14px; }
   color: #555555;
 }
 
+.bg-3 p a {
+	color: #000000;
+}
+
 .bg-2 a {
   color: #fccfdc; 
 }
